@@ -36,6 +36,7 @@ public class StreamStudyTest {
     @Test
     public void sumAll() throws Exception {
         long sum = StreamStudy.sumAll(numbers);
+        System.out.println(sum);
         assertThat(sum).isEqualTo(21);
     }
 
@@ -43,6 +44,7 @@ public class StreamStudyTest {
     public void sumOverThreeAndDouble() throws Exception {
         numbers = Arrays.asList(3, 1, 6, 2, 4, 8);
         long sum = StreamStudy.sumOverThreeAndDouble(numbers);
+        System.out.println(sum);
         assertThat(sum).isEqualTo(36);
     }
 }
